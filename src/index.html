@@ -13,7 +13,7 @@
     <title>Home</title>
   </head>
   <body
-    class="w-screen min-h-screen h-full bg-[url(/src/assets/home/background-home-mobile.jpg)] bg-cover bg-no-repeat bg-center overflow-x-hidden"
+    class="w-screen min-h-screen h-full bg-[url(/src/assets/home/background-home-mobile.jpg)] md:bg-[url(/src/assets/home/background-home-tablet.jpg)] bg-cover bg-no-repeat bg-center overflow-x-hidden"
   >
     <div
       id="menuNav"
@@ -66,22 +66,48 @@
       /></a>
       <img
         id="menuTopo"
-        class="mr-5 cursor-pointer"
+        class="mr-5 cursor-pointer md:hidden"
         src="assets/shared/icon-hamburger.svg"
         alt="Icone Menu Mobile"
       />
+      <div
+        class="hidden md:flex md:items-center md:justify-around md:h-full md:w-3/5 md:bg-[#242730] md:uppercase md:text-white md:font-Barlow"
+      >
+        <a class="h-full flex items-center border-b-2" href="index.html">
+          <p>home</p> </a
+        ><a
+          class="h-full flex items-center hover:border-b-2 border-grayC transition-border duration-100 ease-out"
+          href="destination.html"
+        >
+          <p>destination</p> </a
+        ><a
+          class="h-full flex items-center hover:border-b-2 border-grayC transition-border duration-100 ease-out"
+          href="crew.html"
+        >
+          <p>crew</p> </a
+        ><a
+          class="h-full flex items-center hover:border-b-2 border-grayC transition-border duration-100 ease-out"
+          href="technology.html"
+        >
+          <p>technology</p>
+        </a>
+      </div>
     </header>
     <main class="w-screen">
       <div class="w-screen text-center">
         <p
-          class="pt-14 font-Barlow uppercase text-xl text-lightBlueC tracking-wider"
+          class="pt-14 font-Barlow uppercase text-xl text-lightBlueC tracking-wider md:text-2xl md:mt-10"
         >
           So, you want to travel to
         </p>
-        <p class="pt-5 pb-5 font-Bellefair uppercase text-white text-7xl">
+        <p
+          class="pt-5 pb-5 font-Bellefair uppercase text-white text-7xl md:text-[9rem]"
+        >
           Space
         </p>
-        <p class="font-Barlow pl-5 pr-5 text-lg text-lightBlueC">
+        <p
+          class="font-Barlow pl-5 pr-5 text-lg text-lightBlueC md:text-xl md:pl-40 md:pr-40"
+        >
           Let’s face it; if you want to go to space, you might as well genuinely
           go to outer space and not hover kind of on the edge of it. Well sit
           back, and relax because we’ll give you a truly out of this world
@@ -91,9 +117,9 @@
       <div class="w-screen flex justify-center">
         <a href="destination.html">
           <div
-            class="bg-white w-40 h-40 mt-16 rounded-full flex justify-center items-center hover:shadow-shadowC transition-shadow duration-150 ease-out"
+            class="bg-white w-40 h-40 mt-16 rounded-full flex justify-center items-center md:mt-40 md:w-60 md:h-60 hover:shadow-shadowC transition-shadow duration-150 ease-out"
           >
-            <p class="uppercase text-2xl font-Bellefair">Explore</p>
+            <p class="uppercase text-2xl font-Bellefair md:text-4xl">Explore</p>
           </div>
         </a>
       </div>

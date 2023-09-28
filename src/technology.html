@@ -13,7 +13,7 @@
     <title>Document</title>
   </head>
   <body
-    class="w-screen min-h-screen h-full bg-[url(/src/assets/technology/background-technology-mobile.jpg)] bg-cover bg-no-repeat bg-center overflow-x-hidden"
+    class="w-screen min-h-screen h-full bg-[url(/src/assets/technology/background-technology-mobile.jpg)] md:bg-[url(/src/assets/technology/background-technology-tablet.jpg)] bg-cover bg-no-repeat bg-center overflow-x-hidden"
   >
     <div
       id="menuNav"
@@ -66,21 +66,43 @@
       /></a>
       <img
         id="menuTopo"
-        class="mr-5 cursor-pointer"
+        class="md:hidden mr-5 cursor-pointer"
         src="assets/shared/icon-hamburger.svg"
         alt="Icone Menu Mobile"
       />
+      <div
+        class="hidden md:flex md:items-center md:justify-around md:h-full md:w-3/5 md:bg-[#242730] md:uppercase md:text-white md:font-Barlow"
+      >
+        <a
+          class="h-full flex items-center hover:border-b-2 border-grayC transition-border duration-100 ease-out"
+          href="index.html"
+        >
+          <p>home</p> </a
+        ><a
+          class="h-full flex items-center hover:border-b-2 border-grayC transition-border duration-100 ease-out"
+          href="destination.html"
+        >
+          <p>destination</p> </a
+        ><a
+          class="h-full flex items-center hover:border-b-2 border-grayC transition-border duration-100 ease-out"
+          href="crew.html"
+        >
+          <p>crew</p> </a
+        ><a class="h-full flex items-center border-b-2" href="technology.html">
+          <p>technology</p>
+        </a>
+      </div>
     </header>
     <main class="w-screen font-Barlow">
       <div
-        class="w-screen flex justify-center uppercase text-lg tracking-widest"
+        class="w-screen flex justify-center md:justify-start uppercase text-lg md:text-2xl md:mt-8 tracking-widest md:mb-14"
       >
-        <p class="text-grayC mr-5 font-bold">03</p>
-        <p class="text-white">space launch</p>
+        <p class="text-grayC mr-5 font-bold md:ml-5">03</p>
+        <p class="text-white">space launch 101</p>
       </div>
       <img
         id="imgTech"
-        class="mt-8"
+        class="mt-8 md:m-auto"
         src="assets/technology/image-launch-vehicle-landscape.jpg"
         alt=""
       />
@@ -88,17 +110,20 @@
         id="divTechs"
         class="flex m-auto w-fit text-white font-Bellefair text-lg mt-10"
       >
-        <div id="tech1"
+        <div
+          id="tech1"
           class="cursor-pointer flex items-center justify-center h-12 w-12 mr-5 rounded-full border border-grayC bg-white text-black hover:border-white transition-border duration-150 ease-in-out"
         >
           1
         </div>
-        <div id="tech2"
+        <div
+          id="tech2"
           class="cursor-pointer flex items-center justify-center h-12 w-12 mr-5 rounded-full border border-grayC hover:border-white transition-border duration-150 ease-in-out"
         >
           2
         </div>
-        <div id="tech3"
+        <div
+          id="tech3"
           class="cursor-pointer flex items-center justify-center h-12 w-12 rounded-full border border-grayC hover:border-white transition-border duration-150 ease-in-out"
         >
           3
@@ -111,12 +136,15 @@
           the terminology...
         </p>
         <p
-        id="txtTechName"
+          id="txtTechName"
           class="text-white uppercase text-center text-3xl font-Bellefair mt-2"
         >
           launch vehicle
         </p>
-        <p id="txtTechDesc" class="text-lightBlueC text-lg text-center ml-6 mr-6 mt-4">
+        <p
+          id="txtTechDesc"
+          class="text-lightBlueC text-lg text-center ml-6 mr-6 mt-4 md:ml-40 md:mr-40"
+        >
           A launch vehicle or carrier rocket is a rocket-propelled vehicle used
           to carry a payload from Earth's surface to space, usually to Earth
           orbit or beyond. Our WEB-X carrier rocket is the most powerful in

@@ -13,7 +13,7 @@
     <title>Destination</title>
   </head>
   <body
-    class="w-screen min-h-screen h-full bg-[url(/src/assets/destination/background-destination-mobile.jpg)] bg-cover bg-no-repeat bg-center overflow-x-hidden"
+    class="w-screen min-h-screen h-full bg-[url(/src/assets/destination/background-destination-mobile.jpg)] md:bg-[url(/src/assets/destination/background-destination-tablet.jpg)] bg-cover bg-no-repeat bg-center overflow-x-hidden"
   >
     <div
       id="menuNav"
@@ -66,28 +66,50 @@
       /></a>
       <img
         id="menuTopo"
-        class="mr-5 cursor-pointer"
+        class="mr-5 cursor-pointer md:hidden"
         src="assets/shared/icon-hamburger.svg"
         alt="Icone Menu Mobile"
       />
+      <div
+        class="hidden md:flex md:items-center md:justify-around md:h-full md:w-3/5 md:bg-[#242730] md:uppercase md:text-white md:font-Barlow"
+      >
+        <a
+          class="h-full flex items-center hover:border-b-2 border-grayC transition-border duration-100 ease-out"
+          href="index.html"
+        >
+          <p>home</p> </a
+        ><a class="h-full flex items-center border-b-2" href="destination.html">
+          <p>destination</p> </a
+        ><a
+          class="h-full flex items-center hover:border-b-2 border-grayC transition-border duration-100 ease-out"
+          href="crew.html"
+        >
+          <p>crew</p> </a
+        ><a
+          class="h-full flex items-center hover:border-b-2 border-grayC transition-border duration-100 ease-out"
+          href="technology.html"
+        >
+          <p>technology</p>
+        </a>
+      </div>
     </header>
     <main class="w-screen font-Barlow">
       <div
-        class="w-screen flex justify-center uppercase text-lg tracking-widest"
+        class="w-screen flex justify-center md:justify-start uppercase text-lg md:text-2xl md:mt-8 tracking-widest"
       >
-        <p class="text-grayC mr-5 font-bold">01</p>
+        <p class="text-grayC mr-5 font-bold md:ml-5">01</p>
         <p class="text-white">pick your destination</p>
       </div>
       <div>
         <img
           id="imgPlaneta"
-          class="w-44 m-auto mt-5"
+          class="w-44 m-auto mt-5 md:w-80"
           src="assets/destination/image-moon.webp"
           alt="Foto lua"
         />
         <div
           id="divPlanetas"
-          class="text-lightBlueC flex justify-center uppercase tracking-widest mt-5"
+          class="text-lightBlueC flex justify-center uppercase tracking-widest mt-5 md:mt-10 md:text-xl"
         >
           <p
             id="moon"
@@ -116,13 +138,13 @@
         </div>
         <p
           id="txtNome"
-          class="text-white font-Bellefair uppercase text-center text-6xl mt-10"
+          class="text-white font-Bellefair uppercase text-center text-6xl mt-10 md:text-8xl"
         >
           moon
         </p>
         <p
           id="txtDesc"
-          class="text-lightBlueC text-center ml-5 mr-5 text-[1.1rem] leading-relaxed"
+          class="text-lightBlueC text-center ml-5 mr-5 text-[1.1rem] leading-relaxed md:ml-28 md:mr-28 md:mt-5 md:mb-8"
         >
           See our planet as you’ve never seen it before. A perfect relaxing trip
           away to help regain perspective and come back refreshed. While you’re
@@ -131,17 +153,25 @@
         </p>
       </div>
       <div class="w-5/6 h-px m-auto mt-8 bg-grayC"></div>
-      <div class="flex flex-col items-center uppercase">
-        <p class="text-lightBlueC mt-8 text-lg tracking-widest">avg.distance</p>
-        <p id="txtDist" class="text-white mt-2 text-3xl font-Bellefair">
-          384,400 km
-        </p>
-        <p class="text-lightBlueC mt-8 text-lg tracking-widest">
-          est. travel time
-        </p>
-        <p id="txtTime" class="text-white mt-2 text-3xl font-Bellefair">
-          3 days
-        </p>
+      <div
+        class="flex flex-col items-center uppercase md:flex-row md:justify-center"
+      >
+        <div class="flex flex-col items-center md:mr-32">
+          <p class="text-lightBlueC mt-8 text-lg tracking-widest">
+            avg.distance
+          </p>
+          <p id="txtDist" class="text-white mt-2 text-3xl font-Bellefair">
+            384,400 km
+          </p>
+        </div>
+        <div class="flex flex-col items-center">
+          <p class="text-lightBlueC mt-8 text-lg tracking-widest">
+            est. travel time
+          </p>
+          <p id="txtTime" class="text-white mt-2 text-3xl font-Bellefair">
+            3 days
+          </p>
+        </div>
       </div>
     </main>
     <script src="js/index.js"></script>
