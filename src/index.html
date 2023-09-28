@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="styles/fontGlobals.css" />
+    <title>Home</title>
+  </head>
+  <body
+    class="w-screen min-h-screen h-full bg-[url(/src/assets/home/background-home-mobile.jpg)] bg-cover bg-no-repeat bg-center overflow-x-hidden"
+  >
+    <div
+      id="menuNav"
+      class="hidden h-screen w-2/3 absolute right-0 backdrop-blur-2xl"
+    >
+      <img
+        id="icoFecharNav"
+        class="float-right mt-8 mr-5 cursor-pointer"
+        src="assets/shared/icon-close.svg"
+        alt="Icone fechar"
+      />
+      <div
+        class="absolute w-full h-1/3 top-[5.4rem] flex flex-col justify-around font-Barlow text-white tracking-widest"
+      >
+        <a href="#">
+          <div class="flex ml-5 uppercase cursor-pointer border-r-4">
+            <p class="mr-2 font-bold">00</p>
+            <p>Home</p>
+          </div>
+        </a>
+        <a href="destination.html">
+          <div
+            class="flex ml-5 uppercase cursor-pointer hover:border-r-4 border-grayC transition-border duration-75 ease-out"
+          >
+            <p class="mr-2 font-bold">01</p>
+            <p>Destination</p>
+          </div>
+        </a>
+        <a href="crew.html">
+          <div
+            class="flex ml-5 uppercase cursor-pointer hover:border-r-4 border-grayC transition-border duration-75 ease-out"
+          >
+            <p class="mr-2 font-bold">02</p>
+            <p>Crew</p>
+          </div>
+        </a>
+        <a href="technology.html">
+          <div
+            class="flex ml-5 uppercase cursor-pointer hover:border-r-4 border-grayC transition-border duration-75 ease-out"
+          >
+            <p class="mr-2 font-bold">03</p>
+            <p>Technology</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <header class="w-screen h-20 flex items-center justify-between">
+      <a href="index.html"
+        ><img class="ml-5" src="assets/shared/logo.svg" alt="Icone logo"
+      /></a>
+      <img
+        id="menuTopo"
+        class="mr-5 cursor-pointer"
+        src="assets/shared/icon-hamburger.svg"
+        alt="Icone Menu Mobile"
+      />
+    </header>
+    <main class="w-screen">
+      <div class="w-screen text-center">
+        <p
+          class="pt-14 font-Barlow uppercase text-xl text-lightBlueC tracking-wider"
+        >
+          So, you want to travel to
+        </p>
+        <p class="pt-5 pb-5 font-Bellefair uppercase text-white text-7xl">
+          Space
+        </p>
+        <p class="font-Barlow pl-5 pr-5 text-lg text-lightBlueC">
+          Let’s face it; if you want to go to space, you might as well genuinely
+          go to outer space and not hover kind of on the edge of it. Well sit
+          back, and relax because we’ll give you a truly out of this world
+          experience!
+        </p>
+      </div>
+      <div class="w-screen flex justify-center">
+        <a href="destination.html">
+          <div
+            class="bg-white w-40 h-40 mt-16 rounded-full flex justify-center items-center hover:shadow-shadowC transition-shadow duration-150 ease-out"
+          >
+            <p class="uppercase text-2xl font-Bellefair">Explore</p>
+          </div>
+        </a>
+      </div>
+    </main>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>

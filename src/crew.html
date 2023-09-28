@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="styles/fontGlobals.css" />
+    <title>Document</title>
+  </head>
+  <body
+    class="w-screen min-h-screen h-full bg-[url(/src/assets/crew/background-crew-mobile.jpg)] bg-cover bg-no-repeat bg-center overflow-x-hidden"
+  >
+    <div
+      id="menuNav"
+      class="hidden h-screen w-2/3 absolute right-0 backdrop-blur-2xl"
+    >
+      <img
+        id="icoFecharNav"
+        class="float-right mt-8 mr-5 cursor-pointer"
+        src="assets/shared/icon-close.svg"
+        alt="Icone fechar"
+      />
+      <div
+        class="absolute w-full h-1/3 top-[5.4rem] flex flex-col justify-around font-Barlow text-white tracking-widest"
+      >
+        <a href="index.html">
+          <div
+            class="flex ml-5 uppercase cursor-pointer hover:border-r-4 border-grayC transition-border duration-75 ease-out"
+          >
+            <p class="mr-2 font-bold">00</p>
+            <p>Home</p>
+          </div>
+        </a>
+        <a href="destination.html">
+          <div
+            class="flex ml-5 uppercase cursor-pointer hover:border-r-4 border-grayC transition-border duration-75 ease-out"
+          >
+            <p class="mr-2 font-bold">01</p>
+            <p>Destination</p>
+          </div>
+        </a>
+        <a href="crew.html">
+          <div class="flex ml-5 uppercase cursor-pointer border-r-4">
+            <p class="mr-2 font-bold">02</p>
+            <p>Crew</p>
+          </div>
+        </a>
+        <a href="technology.html">
+          <div
+            class="flex ml-5 uppercase cursor-pointer hover:border-r-4 border-grayC transition-border duration-75 ease-out"
+          >
+            <p class="mr-2 font-bold">03</p>
+            <p>Technology</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <header class="w-screen h-20 flex items-center justify-between">
+      <a href="index.html"
+        ><img class="ml-5" src="assets/shared/logo.svg" alt="Icone logo"
+      /></a>
+      <img
+        id="menuTopo"
+        class="mr-5 cursor-pointer"
+        src="assets/shared/icon-hamburger.svg"
+        alt="Icone Menu Mobile"
+      />
+    </header>
+    <main class="w-screen font-Barlow">
+      <div
+        class="w-screen flex justify-center uppercase text-lg tracking-widest"
+      >
+        <p class="text-grayC mr-5 font-bold">02</p>
+        <p class="text-white">meet your crew</p>
+      </div>
+      <img
+        id="imgCrew"
+        class="w-40 mt-5 m-auto"
+        src="assets/crew/image-douglas-hurley.webp"
+        alt="foto de douglas hurley"
+      />
+      <div class="w-5/6 h-px m-auto bg-grayC"></div>
+      <div>
+        <div id="crewOpt" class="flex w-fit m-auto mt-8">
+          <div
+            id="crew1"
+            class="w-3 h-3 rounded-full bg-white mr-4 hover:bg-white transition-bg duration-200 cursor-pointer"
+          ></div>
+          <div
+            id="crew2"
+            class="w-3 h-3 rounded-full bg-grayC mr-4 hover:bg-white transition-bg duration-200 cursor-pointer"
+          ></div>
+          <div
+            id="crew3"
+            class="w-3 h-3 rounded-full bg-grayC mr-4 hover:bg-white transition-bg duration-200 cursor-pointer"
+          ></div>
+          <div
+            id="crew4"
+            class="w-3 h-3 rounded-full bg-grayC hover:bg-white transition-bg duration-200 cursor-pointer"
+          ></div>
+        </div>
+        <div>
+          <p
+            id="txtRole"
+            class="text-grayC uppercase text-center mt-8 text-lg font-Bellefair"
+          >
+            Commander
+          </p>
+          <p
+            id="txtName"
+            class="uppercase text-white text-center font-Bellefair text-2xl"
+          >
+            douglas hurley
+          </p>
+          <p
+            id="txtBio"
+            class="text-lightBlueC text-center mt-5 ml-5 mr-5 text-[1.05rem] leading-relaxed"
+          >
+            Douglas Gerald Hurley is an American engineer, former Marine Corps
+            pilot and former NASA astronaut. He launched into space for the
+            third time as commander of Crew Dragon Demo-2.
+          </p>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/crew.js"></script>
+  </body>
+</html>
